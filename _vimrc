@@ -35,6 +35,9 @@ set autoindent
 set smartindent
 
 if has("autocmd")
+
+  autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
   " Drupal *.module and *.install files.
   augroup module
     autocmd BufRead,BufNewFile *.module set filetype=php
