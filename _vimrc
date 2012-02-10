@@ -1,5 +1,5 @@
 set nocompatible
-if filereadable($VIMRUNTIME/mswin.vim)
+if filereadable($VIMRUNTIME."/mswin.vim")
 	source $VIMRUNTIME/mswin.vim
 	behave mswin
 endif
