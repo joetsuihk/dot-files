@@ -1,7 +1,8 @@
 set nocompatible
-source $VIMRUNTIME/vimrc_example.vim
-source $VIMRUNTIME/mswin.vim
-behave mswin
+if filereadable($VIMRUNTIME/mswin.vim)
+	source $VIMRUNTIME/mswin.vim
+	behave mswin
+endif
 
 set diffexpr=MyDiff()
 function MyDiff()
